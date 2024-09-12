@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Underside mal</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Mitt nettsted</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="validering.html">Valideringsoppgave</a></li>
+            <li><a href="mal.html">Nettside-mal</a></li>
+            <li><a href="kontakt.html">Kontakt oss</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form>
+            <label for="Navn">Navn:</label><br>
+            <input type="text" id="Navn" pattern="[A-Za-zæøåÆØÅ ]{2,}" required><br>
+
+            <label for="email">Skriv email her</label><br>
+            <input type="email" id="email" required><br>
+
+            <label for="pass">8 tegn, 1 stor og en liten bokstav:</label><br>
+            <input type="password" id="pass" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br>
+
+            <label for="tall">Alder:</label><br>
+            <input type="tall" id="Alder" min="18" max="99"
+
+            <label for="telefon">telefon:</label><br>
+            <input type="telefon" id="telefon" pattern="pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        </form>
+    </main>
+
+    <main>
+        <h2>Underside</h2>
+        <p>2024</p>
+    </main>
+
+    <footer>
+        <p>Ahmed Nasser Aidarus | E-post: <a href="mailto:ahmedna@hiof.no">E-post</a></p>
+    </footer>
+</body>
+</html>
